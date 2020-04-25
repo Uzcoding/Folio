@@ -1,0 +1,50 @@
+.about
+    padding: 100px 0 150px
+    text-align: center
+    &__title
+        margin: 0 0 15px
+    &__text
+        max-width: 880px
+        margin: auto
+        margin-bottom: 130px
+        color: $grey
+        font-size: 16px
+        line-height: 41px
+        +regular
+        &-bolder
+            font-size: 23px
+            +bold
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-item
+        color: $grey
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            top: -40px
+            left: 220px
+            width: 1px
+            height: 240px
+            opacity: 0.5
+            background-color: $grey
+        &:last-child
+            &:after
+                display: none
+        &__img
+            width: 32px
+            height: 30px
+        &__title
+            font-style: 16px
+            line-height: 23px
+            color: $grey
+            +bold
+        &__text
+            display: inline-block
+            max-width: 180px
+            font-size: 12px
+            line-height: 21px
+            text-align: center
+            +regular

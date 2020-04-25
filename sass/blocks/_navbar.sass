@@ -1,0 +1,27 @@
+.navbar
+    width: 100%
+    padding: 8px 0 10px
+    background-color: $main
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo 
+        font-size: 26px
+        +ex-bold
+        &-yellow 
+            color: $yellow
+    &-list 
+        display: flex
+        list-style: none
+        padding: 0
+        &__link 
+            font-size: 12px
+            +ex-bold
+            transition: 0.2s
+            &:hover
+                color: $yellow
+        &__item 
+            margin-right: 44px
+            &:last-child 
+                margin-right: 0

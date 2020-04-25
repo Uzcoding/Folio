@@ -1,0 +1,50 @@
+*
+    box-sizing: border-box
+body
+    font-family: 'Open Sans', sans-serif;
+=ex-bold
+    font-weight: 800
+=bold
+    font-weight: 700
+=regular
+    font-weight: 400
+.wrapper
+    width: 1200px
+    margin: 0 auto
+.container
+    width: 1000px
+    margin: 0 auto
+.link
+    text-transform: uppercase
+    text-decoration: none
+    color: $white
+.btn
+    display: block
+    margin: auto
+    padding: 18px 42px
+    background-color: $yellow
+    border: none
+    cursor: pointer
+    transition: 0.4s
+    +bold
+    &:hover
+        color: $white
+        background-color: $main
+    &:focus
+        outline: none
+.title
+    font-size: 46px
+    color: $main
+    +ex-bold
+    &:after
+        content: '~~~~~~~ :: ~~~~~~~'
+        display: block
+        margin-top: 20px
+        font-size: 18px
+        line-height: 41px
+        color: $grey
+        +regular
+.fixed
+    position: fixed
+    z-index: 1
+    

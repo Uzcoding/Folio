@@ -1,0 +1,36 @@
+.form
+    padding: 80px 0
+    background-color: $form-bg
+    &-block
+        position: relative
+    &__input, &__text
+        outline: none
+        display: block
+        margin: auto
+        text-align: center
+        margin-bottom: 70px
+        color: $grey
+        font-size: 16px
+        line-height: 41px
+        +regular
+        background: none
+        border: none
+        border-bottom: 1px solid $form-border
+        transition: border 0.4s linear
+        &:focus
+            border-bottom: 1px solid $main
+    &__input
+        width: 640px
+    &__text
+        width: 920px
+        margin-bottom: 177px
+    &__btn
+        padding: 18px 64px
+        &:before
+          content: ''  
+          position: absolute
+          top: 370px
+          left: 40px
+          width: 920px
+          height: 2px
+          background-color: $form-border
