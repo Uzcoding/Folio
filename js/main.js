@@ -34,6 +34,7 @@ $(function () {
 		}
     }
 
+	/* Smooth scroll */
 
     $("[data-scroll]").on("click", function (event) {
 		event.preventDefault();
@@ -47,6 +48,15 @@ $(function () {
 			scrollTop: blockOffset
 		}, 700);
     });
-    
+	
+	
+	/* Menu Nav toggle */
+
+	$('#navbar-burger').on('click', function(event) {
+		event.preventDefault();
+
+		$(this).toggleClass('active');
+		$('#navbar-list').toggleClass('active')
+	})
     
 })

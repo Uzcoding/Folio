@@ -18,7 +18,7 @@
         border-bottom: 1px solid $form-border
         transition: border 0.4s linear
         &:focus
-            border-bottom: 1px solid $main
+            border-bottom: 1px solid red
     &__input
         width: 640px
     &__text
@@ -31,6 +31,40 @@
           position: absolute
           top: 370px
           left: 40px
-          width: 920px
+          max-width: 920px
           height: 2px
           background-color: $form-border
+
+@media (max-width: 1200px)
+    .form
+        padding: 60px 0
+        &__input
+            width: 540px
+        &__text
+            width: 680px
+            margin-bottom: 110px
+        &__btn
+            &:before
+                top: 340px
+                left: 11px
+                width: 680px
+@media (max-width: 768px)
+    .form
+        padding: 50px 0
+        &__input
+            width: 300px
+        &__text
+            width: 380px
+            margin-bottom: 90px
+        &__btn
+            &:before
+                display: none
+@media (max-width: 400px)
+    .form
+        padding: 50px 0
+        &__input
+            width: 260px
+        &__text
+            width: 300px
+            margin-bottom: 70px
+            

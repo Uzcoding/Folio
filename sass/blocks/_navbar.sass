@@ -25,3 +25,78 @@
             margin-right: 44px
             &:last-child 
                 margin-right: 0
+    &-burger
+        display: none
+
+@media (max-width: 1200px)
+   .navbar
+        &__logo 
+           font-size: 24px 
+        &-list
+            &__item 
+                margin-right: 25px
+@media (max-width: 768px)
+    .navbar
+        &-list
+            display: none
+            position: absolute
+            width: 100%
+            top: 25px
+            right: 0
+            flex-direction: column
+            text-align: center
+            &__item
+                margin: 0
+                padding: 5px 0
+                background-color: $main
+                &:hover
+                    background-color: $grey
+        &-burger
+            display: block
+            background: none
+            border: none
+            color: $white
+            padding: 0
+            cursor: pointer
+            &:focus
+                outline: none      
+        .burger__menu
+            display: block
+            position: relative
+            background-color: $white
+            width: 25px
+            height: 2px
+            font-size: 0
+            &:focus
+                outline: none
+                border: none
+            &:before, &:after
+                display: block
+                content: ''
+                position: absolute
+                background-color: $white
+                width: 25px
+                height: 2px
+            &:before
+              top: -6px  
+            &:after
+                top: 6px
+
+
+.active
+    display: block
+
+.navbar-burger.active .burger__menu
+    background: none
+
+.navbar-burger.active .burger__menu:before 
+	transform-origin: left top
+	transform: rotate(45deg) translateX(-3px)
+
+
+.navbar-burger.active .burger__menu:after 
+	transform-origin: left bottom
+	transform: rotate(-45deg) translateX(-3px)
+
+
+ 
